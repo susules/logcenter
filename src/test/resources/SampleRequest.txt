@@ -1,0 +1,9 @@
+curl -X POST http://localhost:8080/logs \
+  -H "Content-Type: application/json" \
+  -d '{
+    "serviceName": "UserService",
+    "operationName": "createUser",
+    "giris": "{\"userId\": \"123\", \"action\": \"create\"}",
+    "userId": "admin",
+    "clientIp": "192.168.1.1"
+  }'
